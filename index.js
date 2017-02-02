@@ -25,7 +25,7 @@ function jump1Down(){
     setTimeout(jump1Down, 1)
   }
   else if(h>5) {
-    h = h/10
+    h = h/5
     jump1Up()
   }
   else{
