@@ -13,7 +13,6 @@ function jump1(e){
       document.removeEventListener("touchend", jump1)
     }
 function jump1Up(){
-  t=t+1
   dodger1.style.bottom = `${getBottomPosition(dodger1) + vel()}px`
   if (getBottomPosition(dodger1)<h){
     setTimeout(jump1Up, 1)
@@ -21,7 +20,6 @@ function jump1Up(){
   else{jump1Down()}
 }
 function jump1Down(){
-  t=t-1
   dodger1.style.bottom = `${getBottomPosition(dodger1)- vel()}px`
   if (getBottomPosition(dodger1)>0){
     setTimeout(jump1Down, 1)
