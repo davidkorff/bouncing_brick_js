@@ -36,10 +36,10 @@ function jump1Down(){
 }
 
 function vel(){
-  return ((1-((getBottomPosition(dodger1)/h)**2))/9.8)+10
+  //return ((1-((getBottomPosition(dodger1)/h)**2))/9.8)+7
   //return 10-(((2*getBottomPosition(dodger1))/9.8)**.5)/h
 
-  //return (((h -getBottomPosition(dodger1))/30)+1)
+  return (((h-getBottomPosition(dodger1))/30)+1)
   //return(((2*getBottomPosition(dodger1))/9.8)**-0.5)
 }
 
