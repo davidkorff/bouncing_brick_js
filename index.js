@@ -4,13 +4,13 @@ window.onload=jump1Listener()
 
 
 function jump1Listener(){
-  document.addEventListener('touchend', jump1) }
+  document.addEventListener('keypress', jump1) }
 
 function jump1(e){
       t=0
       a=e.which
       jump1Up()
-      document.removeEventListener("touchend", jump1)
+      document.removeEventListener("keypress", jump1)
     }
 function jump1Up(){
   dodger1.style.bottom = `${getBottomPosition(dodger1) + vel()}px`
