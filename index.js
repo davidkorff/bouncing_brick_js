@@ -4,13 +4,13 @@ window.onload=jump1Listener()
 
 
 function jump1Listener(){
-  document.addEventListener('click', jump1) }
+  document.addEventListener('touchend', jump1) }
 
 function jump1(e){
       t=0
       a=e.which
       jump1Up()
-      document.removeEventListener("click", jump1)
+      document.removeEventListener("touchend", jump1)
     }
 function jump1Up(){
   t=t+1
